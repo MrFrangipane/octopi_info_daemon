@@ -1,0 +1,10 @@
+venv/
+.idea/
+
+_documentation/
+.fileorganizer
+.notes.txt
+
+api_jobs/
+credentials.json
+job.json

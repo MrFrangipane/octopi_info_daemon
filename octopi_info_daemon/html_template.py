@@ -1,6 +1,7 @@
+import os
 import jinja2
 
-_HTML_J2 = "./resources/index.html.jinja2"
+_HTML_J2 = os.path.join(os.path.dirname(__file__), "resources", "index.html.jinja2")
 
 
 def make_html_template(htmlpage_filepath, octopi_info):  # FIXME : make info a dataclass

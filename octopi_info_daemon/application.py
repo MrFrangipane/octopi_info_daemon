@@ -31,8 +31,10 @@ class Application:
             except Exception as e:
                 _logger.warning(f"Exception occurred {e}")
 
-            finally:
+            try:
                 time.sleep(_MAIN_LOOP_INTERVAL)  # FIXME: use a loop and datetime
+            except KeyboardInterrupt as e:
+                return
 
     def _main_loop_step(self):
         image_filepath = tempfile.mktemp() + '.jpg'

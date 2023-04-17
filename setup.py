@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 
 NAME = 'octopi_info_daemon'
-VERSION = '0.0.0'
+VERSION = '0.0.1'
 DESCRIPTION = "Publish a static webpage about Octopi's job status on the web"
 AUTHOR = 'Frangitron'
 AUTHOR_EMAIL = 'contact@frangitron.com'

@@ -32,7 +32,7 @@ class Application:
                 _logger.warning(f"Exception occurred {e}")
 
             finally:
-                time.sleep(_MAIN_LOOP_INTERVAL)
+                time.sleep(_MAIN_LOOP_INTERVAL)  # FIXME: use a loop and datetime
 
     def _main_loop_step(self):
         image_filepath = tempfile.mktemp() + '.jpg'
